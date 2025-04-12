@@ -138,4 +138,56 @@ class ConverterTest {
         void whenArabic_800_ThenRoman_DCCC() {
             Assertions.assertEquals("DCCC", Converter.arabicToRoman(800));
         }
+
+     /*лаб  4*/
+
+    @Test
+    void whenRoman_I_ThenArabic_1() {
+        Assertions.assertEquals(1, Converter.romanToArabic("I"));
     }
+
+    @Test
+    void whenRoman_IV_ThenArabic_4() {
+        Assertions.assertEquals(4, Converter.romanToArabic("IV"));
+    }
+
+    @Test
+    void whenRoman_V_ThenArabic_5() {
+        Assertions.assertEquals(5, Converter.romanToArabic("V"));
+    }
+
+    @Test
+    void whenRoman_IX_ThenArabic_9() {
+        Assertions.assertEquals(9, Converter.romanToArabic("IX"));
+    }
+
+    @Test
+    void whenRoman_X_ThenArabic_10() {
+        Assertions.assertEquals(10, Converter.romanToArabic("X"));
+    }
+
+    @Test
+    void whenRoman_XL_ThenArabic_40() {
+        Assertions.assertEquals(40, Converter.romanToArabic("XL"));
+    }
+
+    @Test
+    void whenRoman_L_ThenArabic_50() {
+        Assertions.assertEquals(50, Converter.romanToArabic("L"));
+    }
+
+    @Test
+    void whenRoman_XC_ThenArabic_90() {
+        Assertions.assertEquals(90, Converter.romanToArabic("XC"));
+    }
+
+    @Test
+    void whenRoman_C_ThenArabic_100() {
+        Assertions.assertEquals(100, Converter.romanToArabic("C"));
+    }
+
+    @Test
+    void whenRoman_M_ThenArabic_1000() {
+        Assertions.assertEquals(1000, Converter.romanToArabic("M"));
+    }
+}
