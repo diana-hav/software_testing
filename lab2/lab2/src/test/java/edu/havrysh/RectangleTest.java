@@ -3,7 +3,7 @@ package edu.havrysh;
 /*
   @author diana
   @project lab2
-  @class Rectangle
+  @class RectangleTest
   @version 1.0.0
   @since 20.03.25 - 12.54
 */
