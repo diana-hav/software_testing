@@ -1,0 +1,29 @@
+### CREATE item
+POST http://localhost:8080/api/v1/items/
+Content-Type: application/json
+
+{
+  "name": "name-to-test",
+  "code": "000000",
+  "description": "description-t"
+}
+
+### GET all items
+GET http://localhost:8080/api/v1/items/
+
+### GET item by ID
+GET http://localhost:8080/api/v1/items/2
+
+### UPDATE item
+PUT http://localhost:8080/api/v1/items/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "name-updated",
+  "code": "000000",
+  "description": "description-t"
+}
+
+### DELETE item
+DELETE http://localhost:8080/api/v1/items/1
